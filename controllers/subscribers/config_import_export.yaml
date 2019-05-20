@@ -1,0 +1,9 @@
+import:
+  title: Import subscribers
+  modelClass: Mavitm\Subscription\Models\SubscriberImport
+  list: $/mavitm/subscription/models/subscriber/columns.yaml
+
+export:
+  title: Export subscribers
+  modelClass: Mavitm\Subscription\Models\SubscriberExport
+  list: $/mavitm/subscription/models/subscriber/columns.yaml

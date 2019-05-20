@@ -1,0 +1,25 @@
+fields:
+    data:
+        label: 'mavitm.subscription::lang.subscriber.data'
+        span: auto
+        type: text
+    subtype:
+        label: 'mavitm.subscription::lang.subscriber.subtype'
+        nameFrom: name
+        descriptionFrom: id
+        span: auto
+        type: relation
+    content_type:
+        label: 'mavitm.subscription::lang.subscriber.content_type'
+        span: auto
+        type: text
+        comment: 'mavitm.subscription::lang.subscriber.content_type_desc'
+    content_id:
+        label: 'mavitm.subscription::lang.subscriber.content_id'
+        span: auto
+        type: text
+        comment: 'mavitm.subscription::lang.subscriber.content_id_desc'
+    accepts:
+        label: 'mavitm.subscription::lang.subscriber.accepst'
+        span: auto
+        type: switch

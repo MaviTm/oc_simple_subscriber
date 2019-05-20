@@ -1,0 +1,10 @@
+name: Subscribers
+form: $/mavitm/subscription/models/subscriber/fields.yaml
+modelClass: Mavitm\Subscription\Models\Subscriber
+defaultRedirect: mavitm/subscription/subscribers
+create:
+    redirect: 'mavitm/subscription/subscribers/update/:id'
+    redirectClose: mavitm/subscription/subscribers
+update:
+    redirect: mavitm/subscription/subscribers
+    redirectClose: mavitm/subscription/subscribers

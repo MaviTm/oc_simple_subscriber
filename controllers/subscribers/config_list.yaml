@@ -1,0 +1,12 @@
+title: Subscribers
+modelClass: Mavitm\Subscription\Models\Subscriber
+list: $/mavitm/subscription/models/subscriber/columns.yaml
+recordUrl: 'mavitm/subscription/subscribers/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: '100'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

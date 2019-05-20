@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table mavitm_subscription_subscriber'
+    - builder_table_create_mavitm_subscription_subscriber.php
+1.0.3:
+    - 'Created table mavitm_subscription_subtype'
+    - builder_table_create_mavitm_subscription_subtype.php

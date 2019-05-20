@@ -1,0 +1,42 @@
+plugin:
+    name: 'mavitm.subscription::lang.plugin.name'
+    description: 'mavitm.subscription::lang.plugin.description'
+    author: Mavitm
+    icon: oc-icon-envelope-square
+    homepage: ''
+permissions:
+    subscriber_manage:
+        tab: 'mavitm.subscription::lang.plugin.name'
+        label: 'mavitm.subscription::lang.permission.subscriber'
+navigation:
+    main-menu-subscriber:
+        label: 'mavitm.subscription::lang.menu.subscriber'
+        url: mavitm/subscription/subscribers
+        icon: icon-envelope-square
+        permissions:
+            - subscriber_manage
+        sideMenu:
+            main-menu-subscriber:
+                label: 'mavitm.subscription::lang.menu.subscriber'
+                url: mavitm/subscription/subscribers
+                icon: icon-envelope-square
+                permissions:
+                    - subscriber_manage
+            side-menu-subtype:
+                label: 'mavitm.subscription::lang.subscriber.subtype'
+                url: mavitm/subscription/subtypes
+                icon: icon-code-fork
+                permissions:
+                    - subscriber_manage
+            side-menu-import:
+                label: 'mavitm.subscription::lang.menu.import'
+                url: mavitm/subscription/subscribers/import
+                icon: icon-upload
+                permissions:
+                    - subscriber_manage
+            side-menu-export:
+                label: 'mavitm.subscription::lang.menu.export'
+                url: mavitm/subscription/subscribers/export
+                icon: icon-download
+                permissions:
+                    - subscriber_manage

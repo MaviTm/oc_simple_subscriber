@@ -1,0 +1,10 @@
+name: Subtypes
+form: $/mavitm/subscription/models/subtype/fields.yaml
+modelClass: Mavitm\Subscription\Models\Subtype
+defaultRedirect: mavitm/subscription/subtypes
+create:
+    redirect: 'mavitm/subscription/subtypes/update/:id'
+    redirectClose: mavitm/subscription/subtypes
+update:
+    redirect: mavitm/subscription/subtypes
+    redirectClose: mavitm/subscription/subtypes

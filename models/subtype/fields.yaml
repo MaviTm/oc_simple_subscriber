@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'mavitm.subscription::lang.subtype.name'
+        span: full
+        type: text

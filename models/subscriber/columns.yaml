@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: id
+        type: number
+    accepts:
+        label: 'mavitm.subscription::lang.subscriber.accepst'
+        type: switch
+        sortable: true
+    subtype_id:
+        label: 'mavitm.subscription::lang.subscriber.subtype'
+        type: number
+        select: name
+        relation: subtype
+    data:
+        label: 'mavitm.subscription::lang.subscriber.data'
+        type: text
+        searchable: true
+    created_at:
+        label: Created
+        type: datetime
+        sortable: true
+    updated_at:
+        label: Updated
+        type: datetime
+        sortable: true

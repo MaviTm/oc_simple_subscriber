@@ -1,0 +1,16 @@
+<form class="form-horizontal" data-request="onMavitmSubscriberRequest" data-request-flash="">
+    {{ form_token() }}
+    <div class="form-group">
+        <div class="input-group">
+            <span class="news">newsletter</span>
+            <input  value="" name="subscribe_data" id="subscribe_data" placeholder="Email" type="text">
+            <button class="btn btn-news" type="submit" value="submit">Subscribe Now</button>
+        </div>
+    </div>
+</form>
+
+{% flash %}
+<p data-control="flash-message" class="flash-message fade {{ type }}" data-interval="5">
+    {{ message }}
+</p>
+{% endflash %}
