@@ -22,9 +22,9 @@ In the cms part, add **Subscriber Component*** to your layouts or pages. If you 
 Sitenizin backend plugins install bölümün de mavitm simple subscriber aratarak kurulumu yapabilirsiniz.
 cms kısmın da layouts veya sayfalarınıza ** Subscriber Component ** ekleyin. Eğer sayfaya özel bir abonelik itiyorsanız ** content_id ** kısmını manuel veya **:id** yada **:slug** şeklinde request değerleri ile kullanın. Bu işlem bulunduğunuz sayfayı işaretlemek için güzel bir yöntemdir. ** content_type ** alanını **content_id** ile edindiğiniz değerin hangi model için olduğunu belirtebilirsiniz.
 
-#component default html codes
+# component default html codes
 
-```
+```html
 <form class="form-horizontal" data-request="onMavitmSubscriberRequest" data-request-flash="">
     {{ form_token() }}
     <div class="form-group">
@@ -36,11 +36,11 @@ cms kısmın da layouts veya sayfalarınıza ** Subscriber Component ** ekleyin.
     </div>
 </form>
 ```
-#if you want to add an inactive record
+# if you want to add an inactive record
 
 You can do this by adding the **accepts** value
 
-```
+```html
 <form class="form-horizontal" data-request="onMavitmSubscriberRequest" data-request-flash="">
     {{ form_token() }}
     <div class="form-group">
@@ -57,7 +57,7 @@ You can do this by adding the **accepts** value
 # If you want to register according to the user's own choice
 
 This is also useful for unsubscribing by  user's own request.
-```
+```html
 <form class="form-horizontal" data-request="onMavitmSubscriberRequest" data-request-flash="">
     {{ form_token() }}
     <div class="form-group">
@@ -75,7 +75,7 @@ This is also useful for unsubscribing by  user's own request.
 ```
 
 # events
-```
+```php
 Event::fire('mavitm.subscription.beforeSaveRecord', [&$model, $this]);
 Event::fire('mavitm.subscription.afterSaveRecord', [&$model, $this]);
 ```
